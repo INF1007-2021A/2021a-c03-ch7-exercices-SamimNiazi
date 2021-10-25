@@ -4,7 +4,7 @@
 import math
 import sys
 sys.path.insert(1, 'D:\charge_cours\INF1007\H2021\exercices\\2021H_ch6_1_exercices')
-from exercice_ch6 import frequence
+
 from turtle import *
 import re
 
@@ -14,7 +14,7 @@ def compute_volume_and_mass(a=2, b=4, c=6, masse_vol=10):
 
     return volume, masse
 
-def draw_branch(branch_len, pen_size, angle):
+#def draw_branch(branch_len, pen_size, angle):
     if branch_len > 0 and pen_size > 0:
         pensize(pen_size)
         forward(branch_len)
@@ -26,7 +26,7 @@ def draw_branch(branch_len, pen_size, angle):
         backward(branch_len)
 
 
-def draw_tree():
+#def draw_tree():
     setheading(90)
     color("green")
     draw_branch(70, 7, 35)
@@ -69,8 +69,8 @@ def check_dna():
 
 if __name__ == '__main__':
     # TODO: Appelez vos fonctions ici
-    draw_tree()
+    #draw_tree()
     print(compute_volume_and_mass())
-    print((lambda sentence: sorted(frequence(sentence), key=frequence(sentence).__getitem__)[-1])("big big test bb"))
+   # print((lambda sentence: sorted(frequence(sentence), key=frequence(sentence).__getitem__)[-1])("big big test bb"))
     check_dna()
 
