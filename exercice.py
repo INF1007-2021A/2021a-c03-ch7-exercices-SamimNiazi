@@ -6,14 +6,15 @@ import math
 from exercice6 import frequence
 from turtle import *
 # TODO: Définissez vos fonction ici
-def volume (a=0,b=0,c=0,masse_volumique=0):
+def volume (a: int, b: int, c: int, masse_volumique: int) -> tuple:
     volume_e = (4/3)* math.pi* a *b *c
     masse = masse_volumique * volume_e
-    return volume_e, masse
+    return ((4/3)* math.pi* a *b *c, masse)
 
-
-
-
+def anagramme():
+    premier_mot = input("Entrer le premier mot")
+    deuxieme_mot = input("Entrer le deuxieme mot")
+    
 def valide(adn):
     if len(adn) == 0:
         return False
