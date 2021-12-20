@@ -11,9 +11,9 @@ def volume (a: int, b: int, c: int, masse_volumique: int) -> tuple:
     masse = masse_volumique * volume_e
     return ((4/3)* math.pi* a *b *c, masse)
 
-def anagramme():
-    premier_mot = input("Entrer le premier mot")
-    deuxieme_mot = input("Entrer le deuxieme mot")
+def triage():
+    x = frequence("Je suis beau")
+    print (x)
     
 def valide(adn):
     if len(adn) == 0:
@@ -45,7 +45,8 @@ def proportion(chaine, sequence):
 
 if __name__ == '__main__':
     # TODO: Appelez vos fonctions ici
-    print (volume (2,4,6,10))
-    print (valide(input("Entrez votre séquence ")))
-    print (proportion(input("entrer un chaine de d'adn "),input("entrer une sequence d'adn ") ))
+    # print (volume (2,4,6,10))
+    # print (valide(input("Entrez votre séquence ")))
+    # print (proportion(input("entrer un chaine de d'adn "),input("entrer une sequence d'adn ") ))
+    print (triage())
     pass
